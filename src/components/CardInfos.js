@@ -26,6 +26,10 @@ const CardBtnWrapper = styled.div`
   align-items: center;
   gap: 2rem;
 
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 854px) {
     justify-content: start;
   }
@@ -36,6 +40,10 @@ const CardDetails = styled.div`
   align-items: center;
   justify-content: center;
   gap: 5vw;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
 
   @media screen and (min-width: 854px) {
     justify-content: start;

@@ -7,11 +7,20 @@ const HeaderTitle = styled.h1`
   font-size: 96px;
   text-transform: uppercase;
   font-weight: 700;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 10px;
+    font-size: 46px;
+  }
 `;
 const HeaderSubtitle = styled.p`
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
+
+  @media screen and (max-width: 450px) {
+    font-size: 13px;
+  }
 `;
 
 export default function Header() {

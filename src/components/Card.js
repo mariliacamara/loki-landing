@@ -12,7 +12,13 @@ const CardWrapper = styled.section`
     flex-direction: row;
   }
 `;
-const CardPoster = styled.div``;
+const CardPoster = styled.div`
+  @media screen and (max-width: 450px) {
+    img {
+      display: none;
+    }
+  }
+`;
 
 export default function Card() {
   return (

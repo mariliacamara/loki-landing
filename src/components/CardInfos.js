@@ -139,7 +139,7 @@ export default function CardInfos() {
         <ReactStars
           count={5}
           onChange={ratingChanged}
-          size={50}
+          size={45}
           a11y={true}
           isHalf={true}
           emptyIcon={<i className="far fa-star"></i>}

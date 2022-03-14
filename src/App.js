@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { createGlobalStyle } from 'styled-components';
+import Content from './containers/Content';
+
+const GlobalStyles = createGlobalStyle`
+  html {
+    --yellow: #FFA800;
+    --blue: #0072D2;
+    --white: #fff;
+    --dark: #131318;
+    --font-loki: 'B612', sans-serif;
+    --font-open: 'Open Sans', sans-serif;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <GlobalStyles />
+      <Content />
+    </main>
   );
 }
 

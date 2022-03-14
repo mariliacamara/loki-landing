@@ -10,23 +10,36 @@ const CardContent = styled.div`
 `;
 
 const CardSynopsis = styled.p`
-  max-width: 45vw;
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem;
+
+  @media screen and (min-width: 854px) {
+    max-width: 45vw;
+    text-align: left;
+  }
 `;
 
 const CardBtnWrapper = styled.div`
   margin-top: 1rem;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  @media screen and (min-width: 854px) {
+    justify-content: start;
+  }
 `;
 
 const CardDetails = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5vw;
+
+  @media screen and (min-width: 854px) {
+    justify-content: start;
+  }
 `;
 
 const ShowDuration = styled.div`
@@ -45,8 +58,6 @@ const ShowDebut = styled.div`
   font-size: 1.5rem;
   font-weight: 700;
 `;
-
-const ShowRatings = styled.div``;
 
 const WatchBtn = styled.a`
   font-family: var(--font-open);
@@ -72,6 +83,7 @@ const TrailerBtn = styled.button`
   border-radius: 3px;
   color: 1px solid var(--white);
   text-transform: uppercase;
+  cursor: pointer;
 `;
 
 export default function CardInfos() {

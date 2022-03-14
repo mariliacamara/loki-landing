@@ -25,7 +25,11 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 7.5rem;
+  gap: 2.5rem;
+
+  @media screen and (min-width: 854px) {
+    gap: 7.5rem;
+  }
 `;
 
 export default function Content() {
